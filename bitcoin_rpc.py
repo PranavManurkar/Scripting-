@@ -103,7 +103,7 @@ if change_amount_B > 0:
     outputs_B[address_B] = round(change_amount_B, 8)
 
 raw_tx_B_C = rpc.createrawtransaction(inputs_B, outputs_B)
-print("\nCreated raw transaction for B->C.")
+print("\nCreated raw transaction for B-> C.")
 
 signed_tx_B_C = rpc.signrawtransactionwithwallet(raw_tx_B_C)
 if not signed_tx_B_C.get("complete"):
