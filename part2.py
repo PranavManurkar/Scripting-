@@ -64,7 +64,7 @@ print("\nCreated raw transaction for A'->B'.")
 # Sign the transaction with the wallet (this signs the UTXO from A')
 signed_tx_A_B = rpc.signrawtransactionwithwallet(raw_tx_A_B)
 if not signed_tx_A_B.get("complete"):
-    print("Error signing the transaction from A' to B'!")
+    print("Error signing the transaction from A' to B '!")
     exit(1)
 
 
